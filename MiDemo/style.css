@@ -15,8 +15,9 @@ body {
 video{
     display: flex;
     position: fixed;
-    width: auto;
+    width: 100%;
     height: 100vh;
+    object-fit: fill;
 }
 .video-container{
     z-index: -1;
@@ -33,6 +34,63 @@ h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+h1::first-letter{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: silver;
+    text-shadow: 2px 5px 8px silver;
+}
+.qdiv{
+    text-align: center;
+}
+q::before{
+    content: "'";
+    color: lightcyan;
+}
+q::after{
+    content: "!'";
+    color: lightcyan    ;
+}
+
+.loadani *{
+    margin: 50vh 0 0 50%;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    /*
+    left: calc(50% -1em);
+    */
+    border-radius: 1.3em;
+    transform-origin: 1.3em 2em;
+    animation: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.a1{
+    animation-delay: 0.1s;
+    background-color: red;
+}
+.a2{
+    animation-delay: 0.2s;
+    background-color: green;
+}
+.a3{
+    animation-delay: 0.3s;
+    background-color: blue;
+}
+.a4{
+    animation-delay: 0.4s;
+    background-color: yellow;
+}
+.a5{
+    animation-delay: 0.5s;
+    background-color: white;
 }
 
 .flexbox-container{
@@ -71,12 +129,12 @@ ul li {
     text-align: center;
     font-size: medium;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+
 }
 ul li a {
     text-decoration: none;
     color: #ddd;
-    display: block;  
+    display: block;
 }
 ul li a:hover {
     background-color: darkslategray;
@@ -166,13 +224,20 @@ input[type="password"]:focus {
 .iframe-container{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
+    height: auto;
+    padding-bottom: 56.25%;
+    /*
+    border: red solid 3px;
+    padding: 50%;
+    */
   }
 .iframe-container iframe{
     position: absolute;
+    /*
     top:0;
-    left: 0;
+    left: 0;*/
     width: 100%;
     height: 100%;
+    padding: 20px;
+
 }
