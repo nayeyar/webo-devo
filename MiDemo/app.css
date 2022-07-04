@@ -1,0 +1,127 @@
+body {
+    color: white;
+    /*background-color: lightsteelblue;
+    background-image: url(https://cdn.nufarm.com/wp-content/uploads/sites/26/2019/07/24162802/Phenoxy-graphic.jpeg);
+    background-size: contain;
+    background-blend-mode: normal;*/
+}
+
+video{
+    display: flex;
+    position: fixed;
+    width: auto;
+    height: 100vh;
+}
+.video-container{
+    z-index: -1;
+    /*
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    */
+}
+
+*{
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.flexbox-container{
+    display: flex;
+    flex-direction: column;
+    /*
+    justify-content: center;
+    align-items: center;
+    */
+}
+.flexbox-item{
+    /*
+    border: solid 2px #ddd;
+    */
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.flexbox-item1{
+    display: flex;
+    color: black;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: aliceblue;
+    /*
+    box-shadow: 20px 20px 20px 0px rgba(red, green, blue, 0.7);
+    */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerbtn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.registerbtn:hover{
+    opacity: 1;
+}
+
+.flexbox-item2{
+    margin: auto;
+    padding: 0%;
+    background-color: rgba(105, 105, 105, 0.5);
+
+}
+.flexbox-item2 h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+.imgdisp1{
+    float: right;
+    padding: 10px;
+    width: 50%;
+    image-rendering: optimizeQuality;
+    /*
+    margin: auto;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    */
+}
+.abtpara{
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 50%;
+}
+
+.imgdisp2 {
+    width: 50%;
+}
